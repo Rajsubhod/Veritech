@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Document</title>
+	</head>
+	<body class="bg-[#1f2937] w-full h-screen">
+		<div
+			class="bg-gray-800 w-full relative flex justify-start items-center flex-col gap-9"
+		>
+			<div
+				class="absolute top-20 bg-gray-500 w-1/2 h-1/6 flex justify-center items-center rounded-full blur-2xl"
+			></div>
+			<h1
+				class="text-6xl font-medium font-custom mt-28 pb-20 z-10 text-gray-900/85"
+			>
+				Todo List
+			</h1>
+			<form id="form" class="flex w-1/2">
+				<input
+					class="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 ml-2"
+					type="text"
+					name="task"
+					id="task"
+					placeholder="Enter your task"
+				/>
+				<button
+					class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-[#0f172a] text-white shadow hover:bg-[#0f172a]/90 ml-5 h-9 px-6 py-2"
+					type="submit"
+				>
+					Add Task
+				</button>
+			</form>
+
+			<div class="relative h-72 w-1/2">
+				<ul id="list" class="flex flex-col gap-2"></ul>
+			</div>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>
