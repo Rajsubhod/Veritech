@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="output.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+		/>
+		<title>Document</title>
+	</head>
+	<body class="w-full h-screen">
+		<header class="">
+			<div class="navbar bg-base-100">
+				<div class="navbar-start">
+					<a class="text-xl pl-[4rem] font-bold" href="index.html">Re:Flix</a>
+				</div>
+				<div class="navbar-center hidden lg:flex">
+					<ul class="menu menu-horizontal px-1">
+						<li><a id="home" href="index.html">Home</a></li>
+						<li>
+							<details class="dropdown">
+								<summary class="">Trending</summary>
+								<ul
+									tabindex="0"
+									id="drop"
+									class="p-2 shadow menu dropdown-content z-[2] bg-base-100 rounded-box w-52"
+								>
+									<li><a href="trend-movies.html">Movies</a></li>
+									<li><a href="trend-series.html">Series</a></li>
+								</ul>
+							</details>
+						</li>
+						<li><a href="recomendation.html">Recomendation</a></li>
+						<li><a href="categories.html">Categories</a></li>
+					</ul>
+				</div>
+				<div class="navbar-end pr-8">
+					<label class="input input-bordered flex items-center gap-2">
+						<input id="search" type="text" class="grow" placeholder="Search" />
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 16 16"
+							fill="currentColor"
+							class="w-4 h-4 opacity-70"
+						>
+							<path
+								fill-rule="evenodd"
+								d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+								clip-rule="evenodd"
+							/>
+						</svg>
+					</label>
+				</div>
+			</div>
+		</header>
+		<div
+			id="banner"
+			class="banner relative py-0 px-[100px] flex justify-between items-center !bg-cover !bg-center w-full min-h-screen overflow-hidden transition-[0.5s] ease-in-out"
+		>
+			<div
+				class="content active relative hidden invisible max-w-[550px] scale-0 text-white bg-slate-900/5 rounded-full p-16 backdrop-blur-[2px]"
+			>
+				<img
+					src="public/title/the-little-mermaid-title.png"
+					alt=""
+					class="movie-title"
+				/>
+				<h4 class="pb-3">
+					<span>2023</span><span>12+</span><span>2h 14min</span
+					><span>Romance</span>
+				</h4>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure nulla
+					aspernatur molestias veritatis? Atque velit nulla alias asperiores
+					doloribus sed quasi consectetur exercitationem quisquam nihil eveniet
+					ab debitis voluptatibus maxime porro rem architecto explicabo, aliquid
+					nesciunt minus amet modi quas.
+				</p>
+				<div class="mt-8">
+					<button class="btn btn-error mr-4 px-9">Trailer</button>
+					<button class="btn btn-neutral px-9">
+						<p class="font-semibold text-red-500 text-base mb-[0.25rem]">
+							Play
+						</p>
+						<i class="material-icons text-red-500">play_circle_outline</i>
+					</button>
+				</div>
+			</div>
+			<div
+				class="carousel-box relative max-w-[750px] flex justify-center items-center bg-black/25 rounded-md backdrop-blur-sm"
+			>
+				<div class="swipe"></div>
+				<div
+					class="slide flex flex-row p-8 justify-center items-center gap-4 w-full overflow-auto"
+				>
+					<div class="slide-item active">
+						<img
+							class="h-80 w-[9999px]"
+							src="public/movies/the-little-mermaid.jpeg"
+							alt=""
+						/>
+					</div>
+					<div class="slide-item">
+						<img
+							class="h-80 w-60"
+							src="public/movies/the-black-demon.jpg"
+							alt=""
+						/>
+					</div>
+					<div class="slide-item">
+						<img class="h-80 w-60" src="public/movies/the-tank.jpeg" alt="" />
+					</div>
+					<div class="slide-item">
+						<img
+							class="h-80 w-60"
+							src="public/movies/the-covenant.jpg"
+							alt=""
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer footer-center p-4 bg-base-300 text-base-content">
+			<aside>
+				<p>Copyright © 2024 - All right reserved by Re:Flix Pvt Ltd</p>
+			</aside>
+		</footer>
+	</body>
+</html>
